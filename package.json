@@ -1,10 +1,15 @@
 {
   "name": "ts-project",
   "version": "1.0.0",
-  "description": "",
+  "homepage": "https://github.com/andrii-pozniak/ts-project/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "web-dev-server --node-resolve --open --watch",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/andrii-pozniak/ts-project/issues"
   },
-  "homepage": "https://github.com/andrii-pozniak/ts-project#readme"
+  "devDependencies": {
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "@web/dev-server": "^0.3.6",
+    "gh-pages": "^6.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "dependencies": {
+    "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  }
 }
