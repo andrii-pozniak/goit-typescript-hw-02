@@ -5,16 +5,17 @@
 */
 var Day;
 (function (Day) {
-    Day["Monday"] = "Monday";
-    Day["Tuesday"] = "Tuesday";
-    Day["Wensday"] = "Wensday";
-    Day["Thursday"] = "Thursday";
-    Day["Friday"] = "Friday";
-    Day["Saturday"] = "Saturday";
-    Day["Sunday"] = "Sunday";
+    Day["Monday"] = "workDay";
+    Day["Tuesday"] = "workDay";
+    Day["Wensday"] = "workDay";
+    Day["Thursday"] = "workDay";
+    Day["Friday"] = "workDay";
+    Day["Saturday"] = "weekend";
+    Day["Sunday"] = "weekend";
 })(Day || (Day = {}));
 ;
-function isWeekend(status) {
-    return;
+function isWeekend(day) {
+    const status = Day.Monday;
+    return status;
 }
 //# sourceMappingURL=7.js.map

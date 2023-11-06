@@ -7,7 +7,14 @@
   Виправте тип у аргументі функції так, щоб не було помилок типу.
 */
 function createOrUpdateUser(initialValues) {
+    const user = {
+        name: "Andre",
+        surname: "Werty",
+        email: "test1@gmail.com",
+        password: "123467",
+    };
     // Оновлення користувача
+    return { ...user, ...initialValues };
 }
-createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
+createOrUpdateUser({ email: "user@mail.com", password: "password123" });
 //# sourceMappingURL=6.js.map
